@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iImagens</title>
+</head>
+<body>
+    <h1>Tabalhando com Imagens</h1>
+    <p>Tentando abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:730px )" srcset="imagens/eu-p.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/eu-m.png" type="image/png">
+        <img src="imagens/eu-g.png" alt="imagem flexivel"></picture>
+        <hr>
+        <h1> Reproduzindo Áudio.</h1>
+        <p>Vamos aprender  reproduzir áudio em HTML5.</p>
+<!-- Há duas formas de por audio. A primeira é :-->
+<audio src="audio/jo-mp3.mp3" controls autoplay></audio>
+
+<!-- A segunda forma é:-->
+<p>
+    <audio preload="metadata" eutoplay controls>
+    <source src="audio/jo-mp3.mp3" type="audio/mpeg">
+</audio></p>
+<hr>
+<!--Nos vídeos tambpem há duas manrira de fazer. A primeira esté a baixo.-->
+<h1> Inserindo Vídeos hospedado localmente.</h1>
+<p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+<video src="video/pexels-video.mp4" controls width="400" ></video>></video> <!--WIDTH= dimensionar o tamanho do vídeo-->
+
+<!--A baixo está a segunda forma e correta para por vídeo-->
+ <p><video controls width="400">
+<source src="video/pexels-video.mp4" type="video/mp4">
+</video></p>
+<hr>
+<h1>Colocando Vídeo do YouTube</h1>
+<h2>Colocando o vídeo do youtube ou de qualquer outra plataforma de vídeo, quando o site for utilizado, não será consumido do meu servidor.</h2>
+<p><iframe width="400" height="315" src="https://www.youtube.com/embed/-V_v3SNOsfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/-t_GDIfllT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    <p><iframe width="400" height="315" src="https://www.youtube.com/embed/-faQCnQdJno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/zE5y9tPEdbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+</body>
+</html>
