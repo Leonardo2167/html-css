@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste imagem de fundo</title>
+    <style>
+        .conteiner{
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: flex-end;
+            height: 900px;
+            width: 1500px;
+            border: 2px solid white;
+            background-image: url(imagens/pattern001.png);
+        }
+        .quadrado{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: beige;
+            align-self: center;
+        }
+        #q1{
+            background-color: azure;
+        }
+        #q2{
+            background-image: linear-gradient( to left, rgb(2, 77, 2), rgb(5, 230, 5));
+        }
+        #q3{
+            background-image: url("imagens/pattern002.png");
+        }
+    </style>
+</head>
+<body class="conteiner">
+    <div class="quadrado" id="q1">
+    </div>
+    
+    <div class="quadrado" id="q2">
+    </div>
+    
+    <div class="quadrado" id="q3">
+    </div>
+    
+</body>
+</html>
